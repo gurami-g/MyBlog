@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>ჩემი ბლოგი</title>
     <link rel="stylesheet" href="css\bootstrap-grid.css">
-    <link rel="stylesheet" href="|css\bootstrap-reboot.css">
+    <link rel="stylesheet" href="css\bootstrap-reboot.css">
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -46,7 +46,31 @@
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                    
+                                        <form class="form-row col py-3 text-center text-light bg-dark">
+                                            <div class="mx-auto">
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="validationServer01">სახელის</label>
+                                                    <input type="text" class="form-control " id="validationServer01" value=""
+                                                        required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="validationServer01">მეილი</label>
+                                                    <div class="input-group is-invalid">
+                                                        <div class="input-group-prepend">
+                                                        
+                                                        </div>
+                                                        <input type="text" class="form-control "
+                                                            aria-describedby="validatedInputGroupPrepend" required>
+                                                    </div>
+                                                </div>
+                                            <div class="col-md-12 mb-3">
+                                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;width:300px" ></textarea>
+                                            </div>
+        
+
+                                            </div>
+
+                                        </form>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-dark">გაგზავნა</button>
                                     </div>
