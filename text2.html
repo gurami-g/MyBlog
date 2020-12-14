@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>მეილის გადამოწმება</title>
+</head>
+
+<body>
+    <form>
+        <input id="mail" type="text>" placeholder="შემოიყვანეთ მეილი">
+        <p id="incorrectMail"></p>
+
+        <button type="button" onclick="checkMail()">შეამოწმე</button>
+    </form>
+
+    <script>
+        function checkMail() {
+            var inputMail = document.getElementById('mail');
+            var mailMessage = document.getElementById('incorrectMail');
+            if (!inputMail.value.includes('@')) {
+                mailMessage.style.color = "red";
+                mailMessage.innerHTML = "მეილი არასწოია !";
+            }
+            else {
+                mailMessage.style.color = "green";
+                mailMessage.innerHTML = "მეილი სწორია";
+            }
+        }
+    </script>
+</body>
+
+</html>
