@@ -156,6 +156,13 @@
                                         <input type="password" class="form-control " id="validationServer01" value=""
                                             required>
                                     </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                                                aria-describedby="invalidCheck3Feedback" required>
+                                    <label class="form-check-label" for="invalidCheck3">
+                                        დამიმახსოვრე
+                                    </label>
+                                </div>
                                     <button class="btn btn-success mt-3" type="submit">შესვლა</button>
                                 </div>
                             </form>
@@ -191,10 +198,26 @@
                                         <label for="validationServer01">მეილი</label>
                                         <div class="input-group is-invalid">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                                                <button class="input-group-text" id="checkMail">@</button>
                                             </div>
                                             <input type="text" class="form-control "
                                                 aria-describedby="validatedInputGroupPrepend" required>
+                                                <script>
+                                                    function checkMail() {
+                                                        var inputMail = document.getElementById('mail');
+                                                        var mailMessage = document.getElementById('incorrectMail');
+                                                        if (!inputMail.value.includes('@')) {
+                                                            mailMessage.style.color = "red";
+                                                            mailMessage.innerHTML = "მეილი არასწოია !";
+                                                        }
+                                                        else {
+                                                            mailMessage.style.color = "green";
+                                                            mailMessage.innerHTML = "მეილი სწორია";
+                                                        }
+                                                    }
+                                                </script>
+                                                
+                                
                                         </div>
                                     </div>
                                     <div class="col-md-12 mb-3">
