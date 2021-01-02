@@ -27,10 +27,12 @@
 <body style="background-color: #ccc">
     <div>
         <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-            <div class="row col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+            <div class="row col-7">
                 <a class="navbar-brand display-1" style="font-family:'nino';font-size:2em;"
                     href="index.html">მოგზაურობა</a>
+            </div>
+            <div>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -214,10 +216,11 @@
                                         <label for="validationServer01">მეილი</label>
                                         <div class="input-group is-invalid">
                                             <div class="input-group-prepend">
-                                                <button class="input-group-text" id="checkMail">@</button>
+                                                <button class="input-group-text" id="checkMail()">@</button>
                                             </div>
-                                            <input type="text" class="form-control "
-                                                aria-describedby="validatedInputGroupPrepend" required>
+                                            <input id="mail"type="text" class="form-control"
+                                                aria-describedby="validatedInputGroupPrepend"required>
+                                                <p id="incorrectMail"></p>
                                                 <script>
                                                     function checkMail() {
                                                         var inputMail = document.getElementById('mail');
@@ -274,7 +277,7 @@
                                     <div class="col-md-12 mb-3">
                                         <label for="validationCustom06">ტელეფონის ნომერი:</label>
                                         <input type="tel" class="form-control" id="validationCustom03"
-                                            placeholder="+995-000-000">
+                                            placeholder="+995-000-000" required>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-check">
