@@ -6,3 +6,7 @@
     font-family: "nino";
     src: url('bpg_nino_mtavruli_normal.otf');
 }
+@font-face {
+    font-family: "mt";
+    src: url('mt_mchedlidze_helnatceri1.ttf');
+}
