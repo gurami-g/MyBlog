@@ -166,7 +166,7 @@
                                     <li><a class="dropdown-item" href="">აჭარა &raquo </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/gomi.html">გომისმთა</a></li>
-                                            <li><a class="dropdown-item" href="#">მწვანე მონასტერი</a></li>
+                                            <li><a class="dropdown-item" href="#">გულების ციხე</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item" href="">მცხეთა-მთიანეთი &raquo </a>
@@ -179,7 +179,7 @@
                               </li>
                             
                               <li><a class="dropdown-item" href="">ფოტო &raquo </a>
-                              <ul class="submenu dropdown-menu">
+                              <ul id="big" class="submenu dropdown-menu">
                                 <ul class="thumbnails">
                                     
                                       
@@ -215,7 +215,7 @@
                                     });
                                 
                                     // make it as accordion for smaller screens
-                                    if ($(window).width() < 1000) {
+                                    if ($(window).width() < 992) {
                                           $('.dropdown-menu a').click(function(e){
                                               e.preventDefault();
                                             if($(this).next('.submenu').length){
@@ -230,7 +230,7 @@
                                 }); // jquery end
                                 </script>
                                 <style type="text/css">
-                                    @media (min-width: 1000px){
+                                    @media (min-width: 992px){
                                         .dropdown-menu .dropdown-toggle:after{
                                             border-top: .4em solid transparent;
                                             border-right: 0;
@@ -249,7 +249,13 @@
                                             display: none;
                                             position: absolute;
                                             left:100%; top:-7px;
+                                            width: 200px;
                                         }
+                                            #big:submenu {
+                                           height: 400px;
+                                           width: 400px;
+                                        }
+                                        
                                         .nav-item .submenu-right{ 
                                             right:100%; left:auto;
                                         }
