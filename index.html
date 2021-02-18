@@ -130,46 +130,46 @@
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">მოგზაურობა</a>
                             <ul class="dropdown-menu">
 
-                              <li><a class="dropdown-item" href="#"> რა ვნახოთ? &raquo </a>
-                                   <ul class="left submenu dropdown-menu">                                   
-                                    <li><a class="dropdown-item" href=""> თბილისი &raquo </a>
+                              <li><a class="dropdown-item" href="#">&laquo რა ვნახოთ?  </a>
+                                   <ul class="submenu dropdown-menu">                                   
+                                    <li><a class="dropdown-item" href="">&laquo თბილისი  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/azeula.html">აზეულას ციხე</a></li>
-                                            <li><a class="dropdown-item" href="">ათეშგა</a></li>
+                                            <li><a class="dropdown-item" href="#">ათეშგა</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="">კახეთი &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo კახეთი  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/bodbe.html">ბოდბე</a></li>
                                             <li><a class="dropdown-item" href="#">ჩიჩხიტურის მონასტერი</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="">იმერეთი &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo იმერეთი  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/kacxi.html">კაცხის სვეტი</a></li>
                                             <li><a class="dropdown-item" href="#">ნავენახევის მღვიმე</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="">სამეგრელო &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo სამეგრელო  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/toba.html">ტობავარჩხილის ტბა</a></li>
                                             <li><a class="dropdown-item" href="html/shxefi.html">შხეფის  ციხე</a></li>
                                         </ul>
                                     </li>
                                     
-                                    <li><a class="dropdown-item" href="">სამცხე-ჯავახეთი &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo სამცხე-ჯავახეთი  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/kaxisi.html">კახისის ტბა</a></li>
                                             <li><a class="dropdown-item" href="#">მწვანე მონასტერი</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="">აჭარა &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo აჭარა  </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/gomi.html">გომისმთა</a></li>
                                             <li><a class="dropdown-item" href="#">გულების ციხე</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="">მცხეთა-მთიანეთი &raquo </a>
+                                    <li><a class="dropdown-item" href="">&laquo მცხეთა-მთიანეთი </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="html/gergeti.html">გერგეთი</a></li>
                                             <li><a class="dropdown-item" href="html/shatili.html">შატილი</a></li>
@@ -178,7 +178,7 @@
                                  </ul>
                               </li>
                             
-                              <li><a class="dropdown-item" href="">ფოტო &raquo </a>
+                              <li><a class="dropdown-item" href="">&laquo ფოტო  </a>
                               <ul id="big" class="submenu dropdown-menu">
                                 <ul class="thumbnails">
                                     
@@ -190,7 +190,7 @@
                                   </ul>
                             </ul>
                         </li>
-                        <li><a class="dropdown-item" href="">სასარგებლო ბმულები &raquo </a>
+                        <li><a class="dropdown-item" href="">&laquo სასარგებლო ბმულები</a>
                             <ul class="submenu dropdown-menu">
                             <li></i><a class="dropdown-item" href="https://amindi.ge/">
                                 <i class="fa fa-sun-o"style="font-size:20px">ამინდი</i></a></li>
@@ -203,18 +203,11 @@
                       </li>
                             </ul>
                             <script type="text/javascript">
-                                /// some script
                                 
-                                // jquery ready start
-                                $(document).ready(function() {
-                                    // jQuery code
-                                
-                                    //////////////////////// Prevent closing from click inside dropdown
+                                $(document).ready(function() {                                                                                                      
                                     $(document).on('click', '.dropdown-menu', function (e) {
                                       e.stopPropagation();
                                     });
-                                
-                                    // make it as accordion for smaller screens
                                     if ($(window).width() < 992) {
                                           $('.dropdown-menu a').click(function(e){
                                               e.preventDefault();
@@ -227,7 +220,7 @@
                                           });
                                     }
                                     
-                                }); // jquery end
+                                }); 
                                 </script>
                                 <style type="text/css">
                                     @media (min-width: 992px){
@@ -251,7 +244,7 @@
                                             right:100%; top:-7px;
                                             width: 220px;
                                         }
-                                            #big:submenu {
+                                            #big:submenu{
                                            height: 400px;
                                            width: 400px;
                                         }
