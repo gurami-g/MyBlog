@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>მწვანე მონასტერი</title>
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" 
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+ crossorigin="anonymous"></script>
+    </head>
+
+<body style="background-color: #ccc">
+    <div>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+            <div class="row">
+                <a class="navbar-brand display-1" style="font-family:'nino';font-size:2em;"
+                    href="../index.html">მოგზაურობა</a>
+            
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+            <div class="row ml-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal4">შესახებ<span
+                                    class="sr-only">(current)</span></a>
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">შესახებ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                                <p class="text-center">ბლოგი შექმნილია საკურსოდ, და მუშაობს მხოლოდ საიტის ფრონტ ნაწილი</p>
+                        </div>
+                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal3">კონტაქტი<span
+                                    class="sr-only">(current)</span></a>
+
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">მოგვწერეთ</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-row col py-3 text-center text-light bg-dark">
+                                                <div class="mx-auto">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="validationServer01">სახელი</label>
+                                                        <input type="text" class="form-control " id="validationServer01">
+                                                            
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="validationServer01">მეილი</label>
+                                                        <div class="input-group is-invalid">
+                                                            <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                                                            <div class="input-group-prepend">
+
+                                                            </div>
+                                                            <input type="text" class="form-control "
+                                                                aria-describedby="validatedInputGroupPrepend" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <textarea id="subject" name="subject"
+                                                            placeholder="Write something.."
+                                                            style="height:200px;width:340px"></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">                                                      
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                      </div>
+                                                    <div class="col-lg-7 mb-2">
+                                          <i class="fa fa-whatsapp"style="font-size:20px" aria-hidden="true">+995-597-907-595</i>
+                                          <i class="fa fa-telegram"style="font-size:20px" aria-hidden="true">+995-597-907-595</i> 
+                                                                                                 
+                                                    </div>             
+                                                    <button type="button" class="btn btn-success">გაგზავნა</button>
+                                                </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    
+                        <!--DROPDOWN-->
+                        <li class="nav-item dropstart">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">მოგზაურობა</a>
+                            <ul class="dropdown-menu">
+
+                              <li><a class="dropdown-item" href="#">&laquo რა ვნახოთ?  </a>
+                                   <ul class="submenu dropdown-menu">                                   
+                                    <li><a class="dropdown-item" href="">&laquo თბილისი  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/azeula.html">აზეულას ციხე</a></li>
+                                            <li><a class="dropdown-item" href="../html/ateshga.html">ათეშგა</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">&laquo კახეთი  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/bodbe.html">ბოდბე</a></li>
+                                            <li><a class="dropdown-item" href="../html/cicxituri.html">ჩიჩხიტურის მონასტერი</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">&laquo იმერეთი  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/kacxi.html">კაცხის სვეტი</a></li>
+                                            <li><a class="dropdown-item" href="../html/navenaxari.html">ნავენახევის მღვიმე</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">&laquo სამეგრელო  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/toba.html">ტობავარჩხილის ტბა</a></li>
+                                            <li><a class="dropdown-item" href="../html/shxefi.html">შხეფის  ციხე</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a class="dropdown-item" href="">&laquo სამცხე-ჯავახეთი  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/kaxisi.html">კახისის ტბა</a></li>
+                                            <li><a class="dropdown-item" href="../html/mwvane.html">მწვანე მონასტერი</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">&laquo აჭარა  </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/gomi.html">გომისმთა</a></li>
+                                            <li><a class="dropdown-item" href="../html/gulebi.html">გულების ციხე</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">&laquo მცხეთა-მთიანეთი </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="../html/gergeti.html">გერგეთი</a></li>
+                                            <li><a class="dropdown-item" href="../html/shatili.html">შატილი</a></li>
+                                        </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                            
+                              <li><a class="dropdown-item" href="">&laquo ფოტო  </a>
+                              <ul id="big" class="submenu dropdown-menu">
+                                <ul class="thumbnails">
+                                    
+                                      
+                                        <img src="images/gomi.jpg" alt=""style="width:9rem">
+                                      
+                                
+                                   
+                                  </ul>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="">&laquo სასარგებლო ბმულები</a>
+                            <ul class="submenu dropdown-menu">
+                            <li></i><a class="dropdown-item" href="https://amindi.ge/">
+                                <i class="fa fa-sun-o"style="font-size:20px">  ამინდი</i></a></li>
+                            <li><a class="dropdown-item" href="http://www.railway.ge/matareblis-modzraobis-ganrigi/">
+                                <i class="fa fa-train"style="font-size:20px" color="red">  ტრანსპორტი</i></a></li>
+                            <li><a class="dropdown-item" href="https://www.google.ge/maps/@42.3029871,41.1145054,7z?hl=ka">
+                                <i class="fa fa-map"style="font-size:20px">  რუკა</i></a></li>
+
+                          </ul>
+                      </li>
+                            </ul>
+                            <script type="text/javascript">
+                                
+                                $(document).ready(function() {                                                                                                      
+                                    $(document).on('click', '.dropdown-menu', function (e) {
+                                      e.stopPropagation();
+                                    });
+                                    if ($(window).width() < 992) {
+                                          $('.dropdown-menu a').click(function(e){
+                                              e.preventDefault();
+                                            if($(this).next('.submenu').length){
+                                                $(this).next('.submenu').toggle();
+                                            }
+                                            $('.dropdown').on('hide.bs.dropdown', function () {
+                                               $(this).find('.submenu').hide();
+                                            })
+                                          });
+                                    }
+                                    
+                                }); 
+                                </script>
+                                <style type="text/css">
+                                    @media (min-width: 992px){
+                                        .dropdown-menu .dropdown-toggle:after{
+                                            border-top: .4em solid transparent;
+                                            border-right: 0;
+                                            border-bottom: .3em solid transparent;
+                                            border-left: .3em solid;
+                                        }
+                                
+                                        .dropdown-menu .dropdown-menu{
+                                            margin-left:0; margin-right: 0;
+                                        }
+                                
+                                        .dropdown-menu li{
+                                            position: relative;
+                                        }
+                                        .nav-item .submenu{ 
+                                            display: none;
+                                            position: absolute;
+                                            right:100%; top:-7px;
+                                            width: 220px;
+                                        }
+                                            #big:submenu{
+                                           height: 400px;
+                                           width: 400px;
+                                        }
+                                        
+                                        .nav-item .submenu-left{ 
+                                            left:100%; right:auto;
+                                        }
+                                
+                                        .dropdown-menu > li:hover > .submenu{
+                                            display: block;
+                                        }
+      
+                                    }
+                                </style>
+                        </li>
+                        <!--DROPDOWN-->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button  class="Buttonsearch" type="submit">Search</button>
+                        <style>
+                        .Buttonsearch {
+                            background-color:#44c767;
+                            border-radius:20px;
+                            border:1px solid #18ab29;
+                            display:inline-block;
+                            cursor:pointer;
+                            color:#ffffff;
+                            font-family:Arial;
+                            font-size:15px;
+                            padding:8px 15px;
+                            text-decoration:none;
+                            text-shadow:0px 1px 0px #2f6627;
+                        }
+                        .Buttonsearch:hover {
+                            background-color:#2f740d;
+                        }
+                        .Buttonsearch:active {
+                            position:relative;
+                            top:1px;
+                        }
+                        </style>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar bg-dark mr-auto py-1">
+        </div>
+    </div>
+
+    <div class="container" >
+        <h1>
+            <p class="text-center" style="font-family:'nino';font-size:1.5em;">მწვანე მონასტერი</p>
+        </h1>
+    </div>
+    <img src="#" alt="დეელოდე ჯიგაროო" class="img-thumbnail">
+</body>
+
+</html>
